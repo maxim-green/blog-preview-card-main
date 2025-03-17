@@ -2,6 +2,10 @@
 @import "fonts.css";
 @import "variables.css";
 
+:root {
+  font-size: 16px;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -10,13 +14,24 @@ body {
   height: 100vh;
   overflow: hidden;
   background-color: var(--color-yellow);
+  font-family: Figtree, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .card {
-  
+  padding: var(--spacing-300);
+  width: 24rem;
+  background-color: var(--color-white);
+  border: 0.0625rem solid var(--color-gray-950);
+  border-radius: 1.25rem;
+  box-shadow: 0.5rem 0.5rem 0 0 #000000;
 }
 
 .card__image {
+  display: block;
+  width: 100%;
+  border-radius: 0.625rem;
 }
 
 .card__status {
